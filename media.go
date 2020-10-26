@@ -978,7 +978,7 @@ func (insta *Instagram) UploadPhoto(photo io.Reader, photoCaption string, qualit
 	}
 
 	body, err := insta.sendRequest(&reqOptions{
-		Endpoint: "media/configure/?",
+		Endpoint: "media/rupload_igphoto/?",
 		Query:    generateSignature(data),
 		IsPost:   true,
 	})
